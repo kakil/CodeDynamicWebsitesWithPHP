@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><!-- PAGE TITLE --></title>
+		<title><?php echo(Title); ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>

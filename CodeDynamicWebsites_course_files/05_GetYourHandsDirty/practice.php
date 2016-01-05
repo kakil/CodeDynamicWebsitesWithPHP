@@ -24,7 +24,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Get Your Hands Dirty: <!-- PAGE TITLE --></title>
+		<title>Get Your Hands Dirty: <?php echo(Title); ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
