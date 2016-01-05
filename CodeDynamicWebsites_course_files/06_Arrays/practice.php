@@ -1,12 +1,16 @@
 <?php
 	
 	// Constants
-
+	define("Title", "Arrays");
 	
 	// Custom Variables
-
+	$lessonNumber = "6";
+	$myName = "Kitwana";
+	date_default_timezone_set('UTC');
+	$year = date('Y');
 	
 	// Moustache Array
+	$mustaches = array('handlebar', 'Fu Man Chu', 'Mine');
 	
 ?>
 
@@ -22,7 +26,7 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Lecture <!-- LESSON NUMBER -->: <small><!-- PAGE TITLE --></small></h1>
+			<h1>Lecture <?php echo($lessonNumber); ?>: <small><?php echo(Title); ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
@@ -31,9 +35,9 @@
 			
 				<h2>Moustache Types</h2>
 				<ul>
-					<li><!-- MOUSTACHE 1 --></li>
-					<li><!-- MOUSTACHE 2 --></li>
-					<li><!-- MOUSTACHE 3 --></li>
+					<li><?php echo $mustaches[0]; ?></li>
+					<li><?php echo $mustaches[1]; ?></li>
+					<li><?php echo $mustaches[2]; ?></li>
 				</ul>
 				
 			</div><!-- end sandbox -->
@@ -42,7 +46,7 @@
 			
 			<hr>
 			
-			<small>&copy;<!-- YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo $year ?> - <?php echo $myName ?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">
