@@ -7,7 +7,7 @@
 <!DOCTYPE html>   
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title><?php echo Title; ?></title>
 	<!-- !CSS -->
 	<link href="/assets/styles.css" rel="stylesheet">
 </head>
