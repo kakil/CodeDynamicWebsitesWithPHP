@@ -24,31 +24,6 @@
 					
 					<?php 
 						
-						//Store Hours
-	
-						$hours = array (
-							
-							'mon' => array('13:00-21:00'),
-							'tue' => array('13:00-21:00'),
-							'wed' => array('13:00-21:00'),
-							'thu' => array('13:00-21:00'),
-							'fri' => array('16:00-23:00'),
-							'sat' => array('16:00-23:00'),
-							'sun' => array(''),
-							
-						);
-						
-						$template = array(
-						
-							'open' 				=> "<em>We're open!</em>",
-							'closed' 			=> "<em>Sorry, we're closed.",
-							'closed_all_day' 	=> "<em>Sorry, we're closed today.</em>",
-							'separator' 		=> " - ",
-							'join' 				=> " and ",
-							'format' 			=> "g:ia",
-							'hours' 			=> "{%open%}{%separator%}{%closed%}",	
-						);
-						
 						date_default_timezone_set('America/New_York'); 
 						$storeHours = new StoreHours($hours, $exceptions, $template);
 						$storeHours->render();
